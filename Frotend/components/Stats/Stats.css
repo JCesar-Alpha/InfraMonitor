@@ -1,0 +1,44 @@
+.stats-section {
+    padding: 2rem 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.stats-section .stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.stats-section .stat-number {
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.stats-section .stat-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+/* Animação para os cards de estatística */
+@keyframes statAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.stat-card {
+    animation: statAppear 0.6s ease-out;
+}
+
+.stat-card:nth-child(1) { animation-delay: 0.1s; }
+.stat-card:nth-child(2) { animation-delay: 0.2s; }
+.stat-card:nth-child(3) { animation-delay: 0.3s; }
+.stat-card:nth-child(4) { animation-delay: 0.4s; }
