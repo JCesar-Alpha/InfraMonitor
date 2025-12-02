@@ -1,1 +1,345 @@
-
+{
+  "version": "1.0.0",
+  "lastUpdated": "2023-10-20T10:00:00.000Z",
+  "description": "Dados de exemplo para desenvolvimento e testes do InfraMonitor",
+  "sampleData": [
+    {
+      "id": 1,
+      "type": "buraco",
+      "title": "Buraco na Avenida Paulista",
+      "description": "Grande buraco na pista sentido centro, próximo ao número 900. Risco para veículos e motociclistas. Profundidade de aproximadamente 30cm.",
+      "address": "Av. Paulista, 900 - Bela Vista, São Paulo - SP",
+      "location": {
+        "lat": -23.5612,
+        "lng": -46.6543
+      },
+      "status": "new",
+      "confirmations": [
+        {
+          "userId": "user_001",
+          "confirmedAt": "2023-10-15T09:30:00.000Z"
+        },
+        {
+          "userId": "user_002", 
+          "confirmedAt": "2023-10-15T10:15:00.000Z"
+        },
+        {
+          "userId": "user_003",
+          "confirmedAt": "2023-10-15T11:20:00.000Z"
+        },
+        {
+          "userId": "user_004",
+          "confirmedAt": "2023-10-15T14:45:00.000Z"
+        },
+        {
+          "userId": "user_005",
+          "confirmedAt": "2023-10-15T16:30:00.000Z"
+        }
+      ],
+      "reportedBy": "user_001",
+      "severity": "high",
+      "priority": "high",
+      "images": [],
+      "createdAt": "2023-10-15T08:30:00.000Z",
+      "updatedAt": "2023-10-15T08:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "type": "iluminacao",
+      "title": "Poste de iluminação quebrado",
+      "description": "Poste na Rua Augusta não acende há 3 dias. Área ficando perigosa à noite, especialmente para pedestres. Local próximo à esquina com a Rua Consolação.",
+      "address": "Rua Augusta, 500 - Consolação, São Paulo - SP",
+      "location": {
+        "lat": -23.5478,
+        "lng": -46.6492
+      },
+      "status": "in-progress",
+      "confirmations": [
+        {
+          "userId": "user_006",
+          "confirmedAt": "2023-10-12T15:20:00.000Z"
+        },
+        {
+          "userId": "user_007",
+          "confirmedAt": "2023-10-12T16:45:00.000Z"
+        },
+        {
+          "userId": "user_008",
+          "confirmedAt": "2023-10-12T18:30:00.000Z"
+        },
+        {
+          "userId": "user_009",
+          "confirmedAt": "2023-10-13T08:15:00.000Z"
+        },
+        {
+          "userId": "user_010",
+          "confirmedAt": "2023-10-13T10:40:00.000Z"
+        },
+        {
+          "userId": "user_011",
+          "confirmedAt": "2023-10-13T14:20:00.000Z"
+        },
+        {
+          "userId": "user_012",
+          "confirmedAt": "2023-10-14T09:05:00.000Z"
+        },
+        {
+          "userId": "user_013",
+          "confirmedAt": "2023-10-14T11:30:00.000Z"
+        }
+      ],
+      "reportedBy": "user_006",
+      "severity": "medium",
+      "priority": "medium",
+      "images": [],
+      "createdAt": "2023-10-12T14:20:00.000Z",
+      "updatedAt": "2023-10-14T09:15:00.000Z"
+    },
+    {
+      "id": 3,
+      "type": "lixo",
+      "title": "Acúmulo de lixo em calçada",
+      "description": "Lixo acumulado há mais de uma semana na Rua da Consolação. Sacos de lixo rasgados e resíduos espalhados pela calçada. Possível risco à saúde pública.",
+      "address": "Rua da Consolação, 200 - Consolação, São Paulo - SP",
+      "location": {
+        "lat": -23.5493,
+        "lng": -46.6521
+      },
+      "status": "resolved",
+      "confirmations": [
+        {
+          "userId": "user_014",
+          "confirmedAt": "2023-10-05T11:30:00.000Z"
+        },
+        {
+          "userId": "user_015",
+          "confirmedAt": "2023-10-05T13:45:00.000Z"
+        },
+        {
+          "userId": "user_016",
+          "confirmedAt": "2023-10-05T15:20:00.000Z"
+        },
+        {
+          "userId": "user_017",
+          "confirmedAt": "2023-10-06T08:15:00.000Z"
+        },
+        {
+          "userId": "user_018",
+          "confirmedAt": "2023-10-06T10:40:00.000Z"
+        },
+        {
+          "userId": "user_019",
+          "confirmedAt": "2023-10-06T14:25:00.000Z"
+        },
+        {
+          "userId": "user_020",
+          "confirmedAt": "2023-10-07T09:10:00.000Z"
+        },
+        {
+          "userId": "user_021",
+          "confirmedAt": "2023-10-07T11:35:00.000Z"
+        },
+        {
+          "userId": "user_022",
+          "confirmedAt": "2023-10-07T16:20:00.000Z"
+        },
+        {
+          "userId": "user_023",
+          "confirmedAt": "2023-10-08T07:45:00.000Z"
+        },
+        {
+          "userId": "user_024",
+          "confirmedAt": "2023-10-08T12:30:00.000Z"
+        },
+        {
+          "userId": "user_025",
+          "confirmedAt": "2023-10-08T17:15:00.000Z"
+        }
+      ],
+      "reportedBy": "user_014",
+      "severity": "medium",
+      "priority": "medium",
+      "images": [],
+      "createdAt": "2023-10-05T10:30:00.000Z",
+      "updatedAt": "2023-10-10T14:20:00.000Z"
+    },
+    {
+      "id": 4,
+      "type": "sinalizacao",
+      "title": "Placa de trânsito danificada",
+      "description": "Placa de pare está inclinada e difícil de visualizar. Local perigoso para cruzamento. Necessário reparo urgente.",
+      "address": "Rua Haddock Lobo, 300 - Cerqueira César, São Paulo - SP",
+      "location": {
+        "lat": -23.5534,
+        "lng": -46.6618
+      },
+      "status": "new",
+      "confirmations": [
+        {
+          "userId": "user_026",
+          "confirmedAt": "2023-10-18T07:15:00.000Z"
+        },
+        {
+          "userId": "user_027",
+          "confirmedAt": "2023-10-18T08:40:00.000Z"
+        }
+      ],
+      "reportedBy": "user_026",
+      "severity": "high",
+      "priority": "high",
+      "images": [],
+      "createdAt": "2023-10-18T07:00:00.000Z",
+      "updatedAt": "2023-10-18T07:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "type": "outros",
+      "title": "Vazamento de água na calçada",
+      "description": "Vazamento de água na calçada há vários dias. Água escorrendo constantemente, criando poça e risco de acidentes.",
+      "address": "Alameda Santos, 700 - Jardim Paulista, São Paulo - SP",
+      "location": {
+        "lat": -23.5689,
+        "lng": -46.6592
+      },
+      "status": "new",
+      "confirmations": [
+        {
+          "userId": "user_028",
+          "confirmedAt": "2023-10-17T16:45:00.000Z"
+        }
+      ],
+      "reportedBy": "user_028",
+      "severity": "medium",
+      "priority": "medium",
+      "images": [],
+      "createdAt": "2023-10-17T16:30:00.000Z",
+      "updatedAt": "2023-10-17T16:30:00.000Z"
+    },
+    {
+      "id": 6,
+      "type": "buraco",
+      "title": "Buraco na Rua Oscar Freire",
+      "description": "Pequeno buraco na pista, mas em local de grande fluxo. Pode causar danos a veículos.",
+      "address": "Rua Oscar Freire, 800 - Cerqueira César, São Paulo - SP",
+      "location": {
+        "lat": -23.5587,
+        "lng": -46.6734
+      },
+      "status": "in-progress",
+      "confirmations": [
+        {
+          "userId": "user_029",
+          "confirmedAt": "2023-10-16T09:20:00.000Z"
+        },
+        {
+          "userId": "user_030",
+          "confirmedAt": "2023-10-16T11:45:00.000Z"
+        },
+        {
+          "userId": "user_031",
+          "confirmedAt": "2023-10-16T14:30:00.000Z"
+        }
+      ],
+      "reportedBy": "user_029",
+      "severity": "medium",
+      "priority": "medium",
+      "images": [],
+      "createdAt": "2023-10-16T09:00:00.000Z",
+      "updatedAt": "2023-10-17T08:15:00.000Z"
+    },
+    {
+      "id": 7,
+      "type": "iluminacao",
+      "title": "Lâmpada queimada em praça pública",
+      "description": "Uma das lâmpadas do poste da praça não está funcionando. Área de lazer ficando escura à noite.",
+      "address": "Praça Charles Miller, 100 - Pacaembu, São Paulo - SP",
+      "location": {
+        "lat": -23.5321,
+        "lng": -46.6658
+      },
+      "status": "new",
+      "confirmations": [
+        {
+          "userId": "user_032",
+          "confirmedAt": "2023-10-19T18:30:00.000Z"
+        },
+        {
+          "userId": "user_033",
+          "confirmedAt": "2023-10-19T19:45:00.000Z"
+        },
+        {
+          "userId": "user_034",
+          "confirmedAt": "2023-10-19T20:15:00.000Z"
+        },
+        {
+          "userId": "user_035",
+          "confirmedAt": "2023-10-20T07:30:00.000Z"
+        }
+      ],
+      "reportedBy": "user_032",
+      "severity": "low",
+      "priority": "low",
+      "images": [],
+      "createdAt": "2023-10-19T18:15:00.000Z",
+      "updatedAt": "2023-10-19T18:15:00.000Z"
+    },
+    {
+      "id": 8,
+      "type": "lixo",
+      "title": "Lixeira pública transbordando",
+      "description": "Lixeira na calçada está transbordando há 2 dias. Lixo espalhado ao redor e mau cheiro.",
+      "address": "Rua Bela Cintra, 400 - Consolação, São Paulo - SP",
+      "location": {
+        "lat": -23.5456,
+        "lng": -46.6589
+      },
+      "status": "new",
+      "confirmations": [
+        {
+          "userId": "user_036",
+          "confirmedAt": "2023-10-20T08:45:00.000Z"
+        },
+        {
+          "userId": "user_037",
+          "confirmedAt": "2023-10-20T10:20:00.000Z"
+        },
+        {
+          "userId": "user_038",
+          "confirmedAt": "2023-10-20T12:15:00.000Z"
+        }
+      ],
+      "reportedBy": "user_036",
+      "severity": "medium",
+      "priority": "medium",
+      "images": [],
+      "createdAt": "2023-10-20T08:30:00.000Z",
+      "updatedAt": "2023-10-20T08:30:00.000Z"
+    }
+  ],
+  "statistics": {
+    "totalOccurrences": 8,
+    "byType": {
+      "buraco": 2,
+      "iluminacao": 2,
+      "lixo": 2,
+      "sinalizacao": 1,
+      "outros": 1
+    },
+    "byStatus": {
+      "new": 4,
+      "in-progress": 2,
+      "resolved": 1
+    },
+    "totalConfirmations": 38,
+    "dateRange": {
+      "start": "2023-10-05",
+      "end": "2023-10-20"
+    }
+  },
+  "metadata": {
+    "purpose": "Desenvolvimento e testes",
+    "coverage": "Região central de São Paulo",
+    "coordinateSystem": "WGS84",
+    "dataFormat": "GeoJSON-like"
+  }
+}
