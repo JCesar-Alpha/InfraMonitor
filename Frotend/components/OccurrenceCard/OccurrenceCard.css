@@ -1,0 +1,73 @@
+.occurrence-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-left: 4px solid var(--secondary);
+}
+
+.occurrence-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.occurrence-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.occurrence-title {
+    margin-bottom: 0.8rem;
+    color: var(--primary);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.occurrence-description {
+    margin-bottom: 1rem;
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.occurrence-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+.occurrence-date,
+.occurrence-address {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+@media (min-width: 768px) {
+    .occurrence-meta {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Status específicos */
+.occurrence-card[data-status="new"] {
+    border-left-color: var(--danger);
+}
+
+.occurrence-card[data-status="in-progress"] {
+    border-left-color: var(--warning);
+}
+
+.occurrence-card[data-status="resolved"] {
+    border-left-color: var(--success);
+    opacity: 0.8;
+}
